@@ -1,6 +1,6 @@
 # !/usr/bin/env python
 '''
-This module automatially checks for pep8 format.
+This module automatically checks for pep8 format.
 It scans the complete folder, searches for python files
 (ignoring the virtual environment python files) and automatially
 format it according to pep8 format using a python plugin 'autopep8'.
