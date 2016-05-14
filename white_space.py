@@ -1,5 +1,10 @@
-"""This module does that automatially checks for pep8 format."""
 # !/usr/bin/env python
+'''
+This module automatially checks for pep8 format.
+It scans the complete folder, searches for python files
+(ignoring the virtual environment python files) and automatially
+format it according to pep8 format using a python plugin 'autopep8'.
+'''
 
 import os
 import autopep8
@@ -10,7 +15,11 @@ BASE_DIR = os.path.abspath(__file__)
 
 
 def format_file(path):
-    """This is the main function that does the work."""
+    '''
+    The function, using 'for' loop scans all the directories as well
+    as sub-directories of the folder for python file and checks
+    for pep8 format.
+    '''
     p = ""
     for dirpath, _, filenames in os.walk(path):
         if(os.path.exists(os.path.join(dirpath, 'bin/activate'))):
